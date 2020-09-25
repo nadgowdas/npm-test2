@@ -1,26 +1,20 @@
 {
-  "name": "node",
-  "version": "1.0.0",
-  "description": "A generated Eclipse Codewind application",
-  "engines": {
-    "node": "^12.0.0"
-  },
-  "config": {
-    "entrypoint": "server/server.js"
+  "name": "docker-hello",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Basic hello world application for Node.js",
+  "author": "Robbie Minshall <rjminsha@us.ibm.com>",
+  "dependencies": {
+    "express": "4.17.1",
+    "jest": "^25.1.0",
+    "jquery": "*",
+    "mocha": "*",
+    "nconf": "*",
+    "request-json": "*",
+    "should": "*",
+    "validator": "*"
   },
   "scripts": {
-    "start": "node $npm_package_config_entrypoint"
-  },
-  "dependencies": {
-    "appmetrics-dash": "^5.3.0",
-    "body-parser": "^1.18.3",
-    "grunt-css": "0.5.4",
-    "express": "^4.16.4",
-    "log4js": "^4.0.2"
-  },
-  "nodemonConfig": {
-    "env": {
-      "NODE_HEAPDUMP_OPTIONS": "nosignal"
-    }
+    "test": "jest test"
   }
 }
